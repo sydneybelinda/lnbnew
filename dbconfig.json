@@ -1,0 +1,37 @@
+
+{
+    "development": {
+      "username": "lnbsydney",
+      "password": "sydney123",
+      "database": "lnb",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "define": {
+        "timestamps": false
+    },
+    "logging": false
+    },
+    "test": {
+        "username": "lnbsydney",
+        "password": "sydney123",
+        "database": "lnb",
+        "host": "127.0.0.1",
+    "dialect": "mysql",
+      "define": {
+        "timestamps": false
+    },
+    "logging": false
+    },
+    "production": {
+        "username": "lnbsydney",
+        "password": "sydney123",
+        "database": "lnb",
+        "host": "127.0.0.1",
+      "dialect": "mysql",
+      "define": {
+        "timestamps": false
+    },
+    "logging": false
+  }
+  }
+  
