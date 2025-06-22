@@ -42,9 +42,9 @@ const Escorts = (props) => {
             <div className="desc pt-50 pb-50">
                 <div className="container-fluid">
                 <h2 className="text-center pb-30">{seo.keyword2}</h2>
-                <p>
-                {nl2br(seo.keydesc)}
-                </p>
+                 <div dangerouslySetInnerHTML={{ __html: seo.keydesc }} />
+                {/* {nl2br(seo.keydesc)} */}
+                {/* </p> */}
                 </div>
             </div>
             <Footer {...props} />
