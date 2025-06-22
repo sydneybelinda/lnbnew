@@ -26,8 +26,8 @@ const Config =  {
         address: "York St \r\n  Sydney NSW 2000",
         email: "info@lnbsydneyescorts.com.au",
         twitter: "https://twitter.com/lnbsydney",    
-        url: "https://www.lnbsydneyescorts.com.au",
-        api: "http://www.lnbsydneyescorts.com.au:2000/api",
+        url: "http://localhost:2000",
+        api: "http://localhost:2000/api",
         privatekey: "wowwow",
       },
 
