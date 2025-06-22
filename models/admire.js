@@ -8,35 +8,25 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     username: {
-      type: DataTypes.STRING(5000),
+      type: DataTypes.TEXT,
       allowNull: true
     },
     name: {
-      type: DataTypes.STRING(5000),
+      type: DataTypes.TEXT,
       allowNull: true
     },
     description: {
-      type: DataTypes.STRING(5000),
+      type: DataTypes.TEXT,
       allowNull: true
     },
     image: {
-      type: DataTypes.STRING(5000),
+      type: DataTypes.TEXT,
       allowNull: false,
       defaultValue: "0"
     }
   }, {
     sequelize,
     tableName: 'admire',
-    timestamps: false,
-    indexes: [
-      {
-        name: "PRIMARY",
-        unique: true,
-        using: "BTREE",
-        fields: [
-          { name: "id" },
-        ]
-      },
-    ]
+    timestamps: false
   });
 };

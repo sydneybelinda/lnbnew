@@ -8,46 +8,36 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     name: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.TEXT,
       allowNull: false
     },
     keyindex: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.TEXT,
       allowNull: true
     },
     keyword1: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.TEXT,
       allowNull: true
     },
     keyword2: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.TEXT,
       allowNull: true
     },
     keydesc: {
-      type: DataTypes.STRING(5000),
+      type: DataTypes.TEXT,
       allowNull: true
     },
     custom: {
-      type: DataTypes.STRING(5000),
+      type: DataTypes.TEXT,
       allowNull: true
     },
     type: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.TEXT,
       allowNull: true
     }
   }, {
     sequelize,
     tableName: 'seoeyes',
-    timestamps: false,
-    indexes: [
-      {
-        name: "PRIMARY",
-        unique: true,
-        using: "BTREE",
-        fields: [
-          { name: "id" },
-        ]
-      },
-    ]
+    timestamps: false
   });
 };
